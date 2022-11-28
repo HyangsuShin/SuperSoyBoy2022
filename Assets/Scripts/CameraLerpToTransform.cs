@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class CameraLerpToTransform : MonoBehaviour {
 
-    // 1
+    // Ch 12
     public Transform camTarget;
     public float trackingSpeed;
     public float minX;
     public float minY;
     public float maxX;
     public float maxY;
-    // 2
+    
+    // Ch 12
     void FixedUpdate()
     {
-        // 3
+        // Ch12
         if (camTarget != null) 
 {
             // 4

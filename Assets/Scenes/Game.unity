@@ -1109,6 +1109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: buzzsaw
       objectReference: {fileID: 0}
+    - target: {fileID: 574230745237612459, guid: 7db54900180e0f0439ab1c62a24a236a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db54900180e0f0439ab1c62a24a236a, type: 3}
 --- !u!1001 &1084798860138497261
