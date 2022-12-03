@@ -351,6 +351,7 @@
 "Assets/Scripts/Hazard.cs"
 "Assets/Scripts/RotationScript.cs"
 "Assets/Scripts/SoyBoyController.cs"
+"Assets/Scripts/Timer.cs"
 -langversion:9.0
 
 /deterministic
