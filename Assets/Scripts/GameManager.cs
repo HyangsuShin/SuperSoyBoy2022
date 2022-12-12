@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void RestartLevel(float delay)
@@ -80,6 +80,31 @@ public class GameManager : MonoBehaviour
         {
             times.Add(newTime);
             bFormatter.Serialize(file, times);
+        }
+    }
+
+    public void DisplayPreviousTimes()
+    {
+        // 1
+        var times = LoadPreviousTimes();
+        var topThree = times.OrderBy(time => time.time).Take(3);
+        // 2
+        var timesLabel = GameObject.Find("PreviousTimes")
+        .GetComponent<Text>();
+        // 3
+        timesLabel.text = "BEST TIMES \n";
+        foreach (var time in topThree)
+        {
+            timesLabel.text += time.entryDate.ToShortDateString() +
+            ": " + time.time + "\n";
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadsceneMode)
+    {
+        if (scene.name == "Level 1")
+        {
+            DisplayPreviousTimes();
         }
     }
 }
