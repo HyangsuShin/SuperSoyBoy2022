@@ -39665,6 +39665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTarget: {fileID: 2077821952}
   trackingSpeed: 2.5
+  cameraZDepth: -10
   minX: -100
   minY: -100
   maxX: 100
@@ -45548,6 +45549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603765711}
+  - component: {fileID: 1603765712}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -46346,6 +46348,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603765712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603765710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e0801850eaa8de46a7e059baa1aea2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: my super awesome level
 --- !u!1001 &1603767769
 PrefabInstance:
   m_ObjectHideFlags: 0
