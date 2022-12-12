@@ -65,6 +65,10 @@
     <Compile Include="Assets\Scripts\RotationScript.cs" />
     <Compile Include="Assets\Scripts\Hazard.cs" />
     <Compile Include="Assets\Scripts\PlayerTimeEntry.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
+    <Compile Include="Assets\Scripts\LevelDataRepresentation.cs" />
+    <Compile Include="Assets\Scripts\LevelItemRepresentation.cs" />
+    <Compile Include="Assets\Scripts\CameraSettingsRepresentation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
